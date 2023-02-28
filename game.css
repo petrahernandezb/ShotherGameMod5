@@ -1,0 +1,47 @@
+html {
+	overflow: hidden;
+	margin: 0;
+	background-color: rgb(240, 221, 17);
+}
+
+.Opponent {
+	animation: rotation 3s infinite linear;
+}
+
+.paused .Opponent {
+	animation-play-state: paused;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+.gamebutton {
+	border: none;
+	background: #6e13c2;
+	color: #fcf9f9;
+	padding: 10px 20px;
+	outline: none;
+	font-family: monospace;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+ul {
+    display: inline;
+	float: right;
+    list-style: none;
+	font-family: 'Press Start 2P', cursive;
+    color: #650780;
+	font-size: 2em;
+    padding-left: 3;
+}
+
+li {
+    margin: 1em;
+}
